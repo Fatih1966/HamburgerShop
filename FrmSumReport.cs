@@ -32,6 +32,22 @@ namespace HamburgerShop
                                             ord.MenuSum,
                                             ord.ExtraSum,
                                         }).ToList();
+
+            var orderSum = (from sales in db.OrderSums
+                            where sales.OrderDate >= dateTimePicker1.Value && sales.OrderDate <= dateTimePicker2.Value
+                            select sales.TotalSum).Sum();
+            textBox1.Text = orderSum.ToString();
+
+            var MenSum = (from menusales in db.OrderSums
+                            where menusales.OrderDate >= dateTimePicker1.Value && menusales.OrderDate <= dateTimePicker2.Value
+                            select menusales.MenuSum).Sum();
+            textBox2.Text = MenSum.ToString();
+
+            var ExtraSum = (from extrasales in db.OrderSums
+                          where extrasales.OrderDate >= dateTimePicker1.Value && extrasales.OrderDate <= dateTimePicker2.Value
+                          select extrasales.ExtraSum).Sum();
+
+            textBox3.Text = ExtraSum.ToString();
         }
     }
 }
