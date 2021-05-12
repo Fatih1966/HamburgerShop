@@ -59,7 +59,7 @@ namespace HamburgerShop
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(31, 815);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(442, 45);
+            this.dateTimePicker1.Size = new System.Drawing.Size(561, 45);
             this.dateTimePicker1.TabIndex = 1;
             // 
             // dateTimePicker2
@@ -67,7 +67,7 @@ namespace HamburgerShop
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Location = new System.Drawing.Point(31, 906);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(442, 45);
+            this.dateTimePicker2.Size = new System.Drawing.Size(561, 45);
             this.dateTimePicker2.TabIndex = 2;
             // 
             // button1
